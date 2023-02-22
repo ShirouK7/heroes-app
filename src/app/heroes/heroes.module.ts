@@ -7,6 +7,11 @@ import { HomeComponent } from './pages/home/home.component';
 import { ListadoComponent } from './pages/listado/listado.component';
 import { EditarComponent } from './pages/editar/editar.component';
 import { HeroesRoutingModule } from './heroes-routing.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MaterialModule } from '../material/material.module';
+import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
+import { ImagenPipe } from './pipes/imagen.pipe';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -17,10 +22,15 @@ import { HeroesRoutingModule } from './heroes-routing.module';
     HeroeComponent,
     HomeComponent,
     ListadoComponent,
-    EditarComponent
+    EditarComponent,
+    HeroeTarjetaComponent,
+    ImagenPipe
   ],
   imports: [
     CommonModule,
+    FlexLayoutModule,
+    FormsModule,
+    MaterialModule,
     HeroesRoutingModule
   ]
 })
